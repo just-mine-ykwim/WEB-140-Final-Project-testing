@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center; /* Center the main container horizontally */
+  align-items: center; /* Center the main container vertically */
+  height: 100vh; /* Make the body take the full height */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all elements inside */
+  justify-content: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.center-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between; /* Pushes title and button to opposite sides */
+  align-items: center; /* Vertically aligns title and button */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+/* Side Navigation Styles */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Sidebar hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #005f73;
+  transition: left 0.3s ease; /* Smooth sliding effect */
+}
+
+.side-nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.side-nav a:hover {
+  background-color: #0a9396;
+}
+
+/* Content area when sidebar is open */
+.content {
+  transition: margin-left 0.3s ease; /* Smooth shift of content */
+}
+
+/* Hamburger Button (Under the Title) */
+.hamburger-btn {
+  position: absolute;
+  right: 0px; /* Aligns the button to the right */
+  top: 1px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1050; /* Ensure it's on top */
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #005f73;
+  margin: 6px auto;
+  transition: 0.3s;
+}
+
+.hamburger-btn:hover span {
+  background-color: #0a9396;
+}
+
+
+
+.job-list {
+  list-style-type: none;
+  padding: 0;}
+  
+.job-list li {
+  margin-bottom: 10px;
+  cursor: pointer;  
+}  
+
+.job description {
+  display: none;
+  color: #0a9396;  
+}
+
+p {left: 4px;}
